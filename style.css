@@ -1,0 +1,245 @@
+/** global element styling **/
+
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/** global classes styling **/
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  /*
+  ...cambia aquí...
+  */
+}
+
+.grid {
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+}
+
+
+.logo {
+  width: 60vw;
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  max-width: 200px;
+  /*
+  ...cambia aquí...
+  */
+  margin-left: 20px;
+}
+
+
+nav {
+  display: flex; /* Asegura que el nav sea flexible */
+  justify-content: flex-end; /* Alinea el menú a la derecha */
+  align-items: center; /* Centra los elementos verticalmente */
+  width: 40vw; /* Ajusta el ancho del menú */
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  margin-right: 80px;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos estén en columna */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  text-align: center; /* Para centrar el texto */
+  margin-top: 80px; /* Eliminar márgenes que puedan afectarlo */
+  margin-block-end: 15px;
+}
+
+#hero > h2 {
+  margin-bottom: 20px;
+}
+
+#hero input[type='email'] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#hero input[type='submit'] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+
+#hero input[type='submit']:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+#features {
+  display: flex;
+  justify-content: center;
+  flex-direction:  column;
+  margin-top: 38px;
+
+}
+
+#features .icon {
+  transform: scale(0.85);
+  min-width: 74px;
+  color: darkorange;
+  margin-right: 55px;
+  margin-block: 20px;
+  margin-left: 55px;
+}
+
+
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  max-width: 800px;
+  padding-left: 20px;
+  margin-block: 21px;
+}
+
+#how-it-works {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#how-it-works > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /*
+  ...cambia aquí...
+  */
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3);
+  text-align: center;
+  border: 1px solid; #000;
+  /*
+  ...cambia aquí...
+  */
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: rgb(0, 0, 0);
+  padding: 15px 0;
+  width: 100%;
+  /*
+  ...cambia aquí...
+  */
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 110px;
+  background-color: #f1c40f;
+  font-weight: bold;
+}
+
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
